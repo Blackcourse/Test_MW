@@ -40,7 +40,7 @@ public class Platform {
             return new ChromeDriver(this.getMWChromeOptions());
 
         } else {
-            throw new Exception("Cannot detect type of the Driver"+getPlatformVar());
+            throw new Exception("Cannot detect type of the Driver"+this.getPlatformVar());
         }
     }
 
@@ -91,7 +91,7 @@ public class Platform {
         deviceMetrics.put ("pixelRatio",3.0 );
         Map<String, Object> mobileEmulatiuon = new HashMap<String,Object>();
         mobileEmulatiuon.put ("deviceMetrics", deviceMetrics);
-        mobileEmulatiuon.put ("userAgent", "Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D");
+        mobileEmulatiuon.put ("userAgent","Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19");
 
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("window-size=340, 640");
